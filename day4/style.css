@@ -1,0 +1,48 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --button-bg: #007acc;
+  --button-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+body.dark {
+  --bg-color: #040404;
+  --text-color: #f0f0f0;
+  --button-bg: #444444;
+  --button-text: #f0f0f0;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.warning {
+  color: orange;
+}
+
+.over {
+  color: red;
+  font-weight: bold;
+}
